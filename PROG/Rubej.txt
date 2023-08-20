@@ -1,0 +1,316 @@
+=== Разрешить копирование на странице ===
+F12 или Ctrl+Shift+J
+Вписываем:
+
+noselect = () => {return true;}
+document.ondragstart = noselect;
+document.onselectstart = noselect;
+document.oncontextmenu = noselect;
+document.getElementsByTagName("style")[0].innerHTML = document.getElementsByTagName("style")[0].innerHTML.replaceAll("user-select","");
+
+=== 1 Task ===
+CharArrayReader implemented Closeable, AutoCloseable, Readable:
+- close()
+- mark(int)
+- markSupported()
+- read()
+- read(char[], int, int)
+- ready()
+- reset()
+- skip(long)
+
+FileOutputStream implemented Closeable, Flushable, AutoCloseable:
+- close()
+- finalize()
+- getChannel()
+- getFD()
+- write(byte[])
+- write(byte[], int, int)
+- write(int)
+- flush from java.io.OutputStream
+
+ByteArrayOutputStream implemented Closeable, Flushable, AutoCloseable:
+- close()
+- reset()
+- size()
+- toString()
+- toByteArray()
+- toString()
+- toString(int)
+- toString(String)
+- write(byte[], int, int)
+- write(int)
+- writeTo(OutputStream)
+- flush, write from java.io.OutputStream
+
+FileInputStream implemented Closeable, AutoCloseable:
+- available()
+- close()
+- finalize()
+- getChannel()
+- getFD()
+- read()
+- read(byte[])
+- read(byte[], int, int)
+- skip(long)
+- mark, markSupported, reset from java.io.OutputStream
+
+BufferedReader implemented Closeable, AutoCloseable, Readable:
+- close()
+- lines()
+- mark(int)
+- markSupported()
+- read()
+- read(char[], int, int)
+- readLine()
+- ready()
+- reset()
+- skip(long)
+- read, read from java.io.Reader
+
+CharArrayWriter implemented Closeable, Flushable, Appendable, AutoCloseable:
+- append(char)
+- append(CharSequence)
+- append(CharSequence, int, int)
+- close()
+- flush()
+- reset()
+- size()
+- toCharArray()
+- toString()
+- write(char[], int, int)
+- write(int)
+- write(String, int, int)
+- writeTo(Writer)
+- write, write from java.io.Writer
+
+BufferedWriter implemented Closeable, Flushable, Appendable, AutoCloseable:
+- close()
+- flush()
+- newLine()
+- write(char[], int, int)
+- write(int)
+- write(String, int, int)
+- append, append, append, write, write from java.io.Writer
+
+ByteArrayInputStream implemented Closeable, AutoCloseable:
+- available()
+- close()
+- mark(int)
+- markSupported()
+- read()
+- read(byte[], int, int)
+- reset()
+- skip(long)
+- read() from java.io.InputStream
+
+
+=== 2 Task === for JShell
+Queue<Integer> q = new LinkedList<>();
+q.add(4); q.add(3); q.add(2); q.add(1); q.remove(); q.add(2);
+q
+
+Map<Integer,Integer> map = new TreeMap<>();
+map.put(5,1); map.put(4,2); map.put(2,4); map.put(3,3); map.put(4,5); map.put(1,2); map.remove(2);
+map
+
+
+=== 3 Task === for JShell
+public static String dupLast(String str) { char lastChar = str.charAt(str.length() - 1); return str + lastChar; }
+public static String dupFirst(String str) { char firstChar = str.charAt(0); return firstChar+str; }
+public static String delLast(String str) { return str.substring(0, str.length() - 1); }
+public static String delFirst(String str) { return str.substring(1); }
+public static String delEdges(String str) { return str.substring(1, str.length() - 1); }
+
+Stream.of("helium", "neon", "argon", "krypton", "xenon", "radon").
+filter(s -> s.length() != 6).
+map(s -> delLast(s)).
+skip(2).
+sorted().
+forEachOrdered(System.out::print);
+
+
+Stream.of("sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday").filter(s -> s.length() <= 8).map(s->delLast(s)).map(s->delFirst(s)).limit(3).sorted().forEachOrdered(System.out::print)
+
+Stream.of("j","j2","j3").
+filter(s -> s.length() <= 7).
+map(s -> dupLast(s)).
+skip(2).
+sorted().
+forEachOrdered(System.out::print);
+
+
+=== 4 Task. Встроенные функциональные интерфейсы ===
+Function<T,R> - R apply(T t);
+Supplier<T> - T get();
+UnaryOperator<T> - T apply(T t);
+Predicate<T> - boolean test(T t);
+Consumer<T> - void accept(T t);
+ToIntFunction<T> - int applyAsInt(T t);
+
+
+=== 5 Task ===
+// Server UDP
+byte arr[] = new byte[10];
+int len = arr.length;
+DatagramChannel dc; ByteBuffer buf;
+InetAddress host; int port = 6789;
+SocketAddress addr;
+addr = new InetSocketAddress(port);
+dc = DatagramChannel.open();
+dc.bind(addr);
+buf = ByteBuffer.wrap(arr);
+addr = dc.receive(buf);
+for (int j = 0; j < len; j++) {
+	arr[j] *= 2;
+}
+buf.flip();
+dc.send(buf, addr);
+
+// Client UDP
+byte arr[] = {0,1,2,3,4,5,6,7,8,9};
+int len = b.length;
+DatagramChannel dc; ByteBuffer buf;
+InetAddress host; int port;
+SocketAddress addr;
+addr = new InetSocketAddress(host,port);
+dc = DatagramChannel.open();
+buf = ByteBuffer.wrap(arr);
+dc.send(buf, addr);
+buf.clear();
+addr = dc.receive(buf);
+for (byte j : arr) {
+	System.out.println(j);
+}
+
+// Server TCP
+byte arr[] = new byte[10];
+int len = arr.length;
+Socket sock; ServerSocket serv;
+OutputStream os; InputStream is;
+InetAddress host; int port = 6789;
+serv = new ServerSocket(port);
+sock = serv.accept();
+is = sock.getInputStream();
+is.read(arr);
+for (int j = 0; j < len; j++) {
+	arr[j] *= 2;
+}
+os = sock.getOutputStream();
+os.write(arr);
+
+// Client TCP
+byte arr[] = {0,1,2,3,4,5,6,7,8,9};
+int len = arr.length;
+Socket sock;
+OutputStream os; InputStream is;
+InetAddress host; int port;
+port = 6789;
+sock = new Socket(host,port);
+os = sock.getOutputStream();
+os.write(arr);
+is = sock.getInputStream();
+is.read(arr);
+for (byte j : arr) {
+	System.out.println(j);
+}
+
+=== 6 Task ===
+Connection conn = DriverManager.getConnection();
+Statement st = conn.prepareStatement();
+ResultSet rs = st.executeQuery();
+if (rs.next()) String name = rs.getString();
+
+
+
+String url = "jdbc:mysql://localhost:3306/mydatabase"; // URL базы данных
+String user = "root"; // Имя пользователя
+String password = "password"; // Пароль
+
+try {
+	Connection connection = DriverManager.getConnection(url, user, password); // Подключение к БД
+	Statement statement = connection.createStatement(); // Создание объекта Statement
+
+	ResultSet resultSet = statement.executeQuery("SELECT * FROM mytable"); // Выполнение запроса
+
+	while (resultSet.next()) {
+		int id = resultSet.getInt("id"); // Получение значения поля id
+		String name = resultSet.getString("name"); // Получение значения поля name
+
+		System.out.println("ID: " + id + ", Name: " + name); // Вывод результатов
+	}
+
+	connection.close(); // Закрытие соединения с БД
+} catch (SQLException e) {
+	e.printStackTrace();
+}
+
+=== 7 Task ===
+sync -> blocked queue ->  back to ready -> running 
+sleep -> just waits and then back to ready -> running 
+waiting -> queue for waiting ->  back to ready -> running
+
+=== 8 Task ===
+Построение списка кандидатов 
+Locale loc = Locale.US; // Locale.getDefault() = ru_RU;
+ResourceBundle rb = ResourceBundle.getBundle("GuiLabels", loc);
+1) GuiLabels_en_US
+2) GuilLabels_en
+3) GuiLabels_ru_RU
+4) GuiLabels_ru
+5) GuiLabels
+// ресурсы по умолчанию (если нет подходящих)
+
+=== 10 Task ===
+CardLayout - переключение между несколькими панелями (вкладки).
+BoxLayout (X_AXIS) - ставит свои компоненты в ряд.
+SpringLayout - е*банутая х*йня для всего (посути для размещения по сторонам света объектов)
+GridLayout - Таблица (Каждый компонент занимает все доступное пространство в своей ячейке, и каждая ячейка имеет одинаковый размер)
+BoxLayout (Y_AXIS) - укладывает свои компоненты друг на друга
+TableLayout - ?
+BorderLayout - имеет пять областей: PAGE_START PAGE_END LINE_START LINE_END CENTER.
+
+
+
+========================================
+Прокси — это структурный шаблон проектирования, который позволяет вам предоставить замену или местозаполнитель для другого объекта. Прокси контролирует доступ к исходному объекту, позволяя вам выполнять какие-либо действия либо до, либо после того, как запрос дойдет до исходного объекта.
+Мост — это шаблон структурного проектирования, который позволяет разделить большой класс или набор тесно связанных классов на две отдельные иерархии — абстракцию и реализацию, — которые можно разрабатывать независимо друг от друга.
+Декоратор — это шаблон структурного проектирования, который позволяет прикреплять к объектам новые поведения, помещая эти объекты внутрь специальных объектов-оболочек, содержащих эти поведения.
+Композитный — это шаблон структурного проектирования, который позволяет объединять объекты в древовидные структуры, а затем работать с этими структурами, как если бы они были отдельными объектами.
+Builder — это творческий шаблон проектирования, который позволяет вам создавать сложные объекты шаг за шагом. Шаблон позволяет создавать различные типы и представления объекта, используя один и тот же код построения.
+Фасад — это шаблон структурного проектирования, предоставляющий упрощенный интерфейс для библиотеки, фреймворка или любого другого сложного набора классов.
+
+
+TCP NIO 
+// клиент
+byte arr[] = {0,1,2,3,4,5,6,7,8,9};
+int len = arr.length;
+InetAddress host; int port;
+SocketAddress addr; SocketChannel sock;
+port = 6789;
+addr = new InetSocketAddress(host,port);
+sock = SocketChannel.open();
+sock.connect(addr);
+buf = ByteBuffer.wrap(arr);
+sock.write(buf);
+buf.clear();
+sock.read(buf);
+for (byte j : arr) {
+	System.out.println(j);
+}
+// сервер
+byte arr[] = new byte[10];
+int len = arr.length;
+InetAddress host; int port = 6789;
+SocketAddress addr; SocketChannel sock;
+ServerSocketChannel serv;
+serv = ServerSocketChannel.open();
+serv.bind(port);
+sock = serv.accept();
+buf = ByteBuffer.wrap(arr);
+sock.read(buf);
+for (int j = 0; j < len; j++) {
+	arr[j] *= 2;
+}
+buf.flip();
+sock.write(buf);

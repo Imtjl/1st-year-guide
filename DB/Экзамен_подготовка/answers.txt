@@ -1,0 +1,20 @@
+1) alter table Show_sponsers add column investment money not null check(investment >= 0::money) default 0;
+2) update Show_sponsers set investment = floor(random() * (6000-10+1) + 10)::int::money;
+3) select spon.name, sum(sh_spon.investment) from Show_sponsers sh_spon join Sponsers spon 
+on spon.id = sh_spon.sponsor_id group by spon.name order by sum(sh_spon.investment) desc limit 3; 
+4) with needed_position as (select id as position_id from Position where name = 'Manager')
+select models.name, 
+case
+	when clothes.name is null 
+	then 'naked'
+	else clothes.name
+end 
+from Show_models show_models 
+left join Clothes_worn_by_models_on_show clothes_show on 
+show_models.model_id = clothes_show.model_id
+left join Clothes clothes on clothes.id = clothes_show.clothes_id
+join Models models on models.id = show_models.model_id 
+and exists(select null from Staff_on_show join Staff staff
+		   on staff.id = Staff_on_show.staff_id 
+		   where Staff_on_show.show_id = show_models.show_id 
+		   and staff.position_id = (select position_id from needed_position));

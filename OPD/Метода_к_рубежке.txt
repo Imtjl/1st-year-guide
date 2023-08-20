@@ -1,0 +1,220 @@
+В этой методе я постараюсь разобрать вариант с массивом указателей, для кого он непонятен.
+Массив [4x4x4] выглядит примерно следующим образом:
+
+[adr1, adr2, adr3, adr4] - основной массив (main array)
+|
+|--adr1--> [adr11, adr12] ------|--adr11-->[num1, num2, num3, num4]
+|    (внутренний массив)        |
+|                               |--adr12-->[num5, num6, num7, num8]
+|
+|--adr2--> [adr21, adr22] ------|--adr21-->[num1, num2, num3, num4]
+|                               |
+|                               |--adr22-->[num5, num6, num7, num8]
+|
+|--adr3--> [adr31, adr32] ------|--adr31-->[num1, num2, num3, num4]
+|                               |
+|                               |--adr32-->[num5, num6, num7, num8]
+|
+|--adr4--> [adr41, adr42] ------|--adr41-->[num1, num2, num3, num4]
+                                |
+                                |--adr42-->[num5, num6, num7, num8]
+
+
+То есть это один большой массив, который внутри себя содержит указатели на другие массивы, которые внутри себя содержат указатели на массивы чисел.
+
+Как это выглядит в памяти:
+- идут подряд элементы изначального массива. Эти элементы - это ссылки, поэтому  записать их как WORD 0xXXXX не составит труда.
+- далее, следом за ними, сразу же идут подряд массивы, которые указаны по этим ссылкам
+- за всеми ними подряд идут массивы из чисел. 
+
+! важно отметить, что все массивы могут лежать не друг за другом, а в любом месте памяти как они захотят - в примере я как раз раскидал их так, как мне пришло в голову
+
+
+Но если для удобства расположить всё подряд, то получится в памяти вот так:
+
+Если обозначить:
+- ссылки основного массива как l1, l2, l3, l4
+- ссылки внутренних массивов как i1, i2, i3, i4
+- числа самых внутренних массивов как n1, n2, n3, n4
+
+То ячейки памяти будут выглядеть следующим образом:
+
+l1
+l2    | 4 ссылки в основном массиве
+l3
+l4
+i11
+i12
+i13
+i14
+i21
+i22
+i23
+i24
+i31   | 4 массива по 4 ссылки в каждом -> 16 ячеек
+i32
+i33 
+i34    
+i41
+i42
+i43
+i44
+n11
+n12
+n13
+n14
+n21
+n22
+n23
+n24
+n31
+n32
+n33
+n44
+n51
+n52
+n53
+n54
+n61
+n62
+n63
+n64
+n71
+n72
+n73
+n74
+n81
+n82    | 16 массивов по 4 числа -> 64 числа
+n83
+n84
+n91
+n92
+n93
+n94
+nA1
+nA2
+nA3
+nA4
+nB1
+nB2
+nB3
+nB4
+nC1
+nC2
+nC3
+nC4
+nD1
+nD2
+nD3
+nD4
+nE1
+nE2
+nE3
+nE4
+nF1
+nF2
+nF3
+nF4
+n101
+n102
+n103
+n104
+
+всю вот эту башню можно записать как WORD 0xXXXX, где XXXX - какое-то 16ричное число.
+
+Давайте решим на примере небольшого массива, чтобы не запутаться.
+
+Пусть будет массив [2x2x3]. Находиться он будет по адресу 0x345.
+Программа будет начинаться с 0x111. Результат программы должен быть сохранён по адресу 0x555. Напишите программу на языке ассемблер для нахождения суммы этого массива. 
+
+
+program.asm:
+
+; Заполню массив произвольными значениями так, чтобы они не конфликтовали с условием:
+
+org 0x345
+WORD 0x566 ; l1
+WORD 0x577 ; l2
+
+org 0x566
+WORD 0x600 ; i11
+WORD 0x610 ; i12
+
+org 0x577
+WORD 0x623 ; i21
+WORD 0x647 ; i22
+
+org 0x600
+WORD 1 ; n11
+WORD 2 ; n12
+WORD 3 ; n13
+
+org 0x610
+WORD 2 ; n11
+WORD 2 ; n12
+WORD 2 ; n13
+
+org 0x623
+WORD 4 ; n11
+WORD 2 ; n12
+WORD 7 ; n13
+
+org 0x647
+WORD 1 ; n11
+WORD 1 ; n12
+WORD 3 ; n13
+
+; Давайте посчитаем теоретическую результирующую сумму:
+; (1 + 2 + 3) + 2*3 + (4 + 2 + 7) + (1 + 1 + 3) = 6 + 6 + 13 + 5 = 30 в 10сс
+; т.е. результат будет 001E в 16сс - этот результат будет в ячейке 0x555
+
+; Напишем программу на ассемблере для обработки этого массива:
+
+org 0x555
+result: WORD 0x00
+
+org 0x100
+main:  WORD 0x345 ; "main" arr pointer
+
+main_arr_length: WORD 2   ; "main"   arr length
+inner_arr_length: WORD 2  ; "inner"  arr length
+numb_array_length: WORD 3 ; "number" arr length
+
+inner_adr_pointer: WORD 0x00
+inner_iterations_counter: WORD 0x00
+
+numb_adr_pointer: WORD 0x00
+numb_iterations_counter: WORD 0x00
+
+org 0x111
+START:
+; setup
+LD (main)+
+ST $inner_adr_pointer
+LD $inner_arr_length
+ST $inner_iterations_counter
+LOOP $main_arr_length
+CALL $inner_counting
+JUMP $the_end
+
+inner_counting:
+LD (inner_adr_pointer)+
+ST $numb_adr_pointer
+LD $numb_array_length
+ST $numb_iterations_counter
+LOOP $inner_iterations_counter
+CALL $numb_counting
+RET
+
+numb_counting: 
+LD (numb_adr_pointer)+
+ADD $result
+ST $result
+LOOP $numb_iterations_counter
+JUMP $numb_counting
+RET
+
+the_end:
+LD $result
+HLT
+ 
