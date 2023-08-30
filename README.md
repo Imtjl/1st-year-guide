@@ -14,16 +14,21 @@
   - [Сокращения, сленг и ссылки](#сокращения-сленг-и-ссылки)
   - [Сборник полезных источников](#сборник-полезных-источников)
   - [Гелиус](#гелиус)
-    - [Авторизация в se.ifmo.ru](#авторизация-в-seifmoru)
-  - [Подключение через консоль (powershell, bash, zsh, e.t.c)](#подключение-через-консоль-powershell-bash-zsh-etc)
-  - [PuttY (консоль)](#putty-консоль)
-  - [Загрузка файлов через консоль (powershell, bash, zsh, e.t.c)](#загрузка-файлов-через-консоль-powershell-bash-zsh-etc)
-  - [WinSCP (для загрузки файлов)](#winscp-для-загрузки-файлов)
-  - [FileZilla (для загрузки файлов)](#filezilla-для-загрузки-файлов)
-  - [Git (для загрузки файлов)](#git-для-загрузки-файлов)
-    - [Альтернативный способ загрузить проект на сервак через git](#альтернативный-способ-загрузить-проект-на-сервак-через-git)
-    - [1. Бывет такое, что JAVA перестаёт работать с ошибкой переполнения кучи (или java по дефолту 11 версии)](#1-бывет-такое-что-java-перестаёт-работать-с-ошибкой-переполнения-кучи-или-java-по-дефолту-11-версии)
-    - [2. Проблемы с базой данных и клиентскими и серверными приложениями (не запускается, переполнение кучи и т.д.)](#2-проблемы-с-базой-данных-и-клиентскими-и-серверными-приложениями-не-запускается-переполнение-кучи-и-тд)
+    - [Подключение и загрузка файлов](#Подключение)
+      - [Авторизация в se.ifmo.ru](#авторизация-в-seifmoru)
+      - [Подключение через консоль (powershell, bash, zsh, e.t.c)](#подключение-через-консоль-powershell-bash-zsh-etc)
+      - [Загрузка файлов через консоль (powershell, bash, zsh, e.t.c)](#загрузка-файлов-через-консоль-powershell-bash-zsh-etc)
+      - [Создание `.bat` - файла для авто-подключения к серверу (консоль + для загрузки файлов)](#создание-bat---файла-для-авто-подключения-к-серверу-консоль--для-загрузки-файлов)
+      - [PuttY (консоль)](#putty-консоль)
+      - [WinSCP (для загрузки файлов)](#winscp-для-загрузки-файлов)
+      - [FileZilla (для загрузки файлов)](#filezilla-для-загрузки-файлов)
+      - [Git (для загрузки файлов)](#git-для-загрузки-файлов)
+    - [Лайфхаки по работе с сервером](#лайфхаки-по-работе-с-сервером)
+    - [Cоздание перманентной переменной окружения](#создание-перманентной-переменной-окружения)
+    - [Траблы](#траблы)
+      - [JAVA: ошибка переполнения кучи или java по дефолту 11 версии, BindException](#JAVA-ошибка-переполнения-кучи-или-java-по-дефолту-11-версии-BindException)
+      - [Проблемы с базой данных и клиентскими и серверными приложениями](#Проблемы-с-базой-данных-и-клиентскими-и-серверными-приложениями)
+    - [Приколы](#Приколы)
   - [Система оценивания БаРС и разбалловка по всем предметам](#система-оценивания-барс-и-разбалловка-по-всем-предметам)
   - [ITMO ENTER](#itmo-enter)
   - [Математика](#математика)
@@ -201,7 +206,7 @@ graph TD;
 |Black Rider|[<img src="./icons/nodes.png" width="40" height="40">](https://t.me/+qO4dE84coBlkNDU6) [<img src="./icons/opd.png" width="40" height="40">](https://github.com/eliteSufferer/ITMO_Studies/tree/main/OPD_Labs) [<img src="./icons/psql.svg" width="40" height="40">](https://github.com/eliteSufferer/ITMO_Studies/tree/main/Databases)|
 |maxbarsukov|[<img src="./icons/java.png" width="40" height="40">](https://github.com/maxbarsukov/itmo/tree/master/1-2%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5) [<img src="./icons/opd.png" width="40" height="40">](https://github.com/maxbarsukov/itmo/tree/master/1-2%20%D0%BE%D0%BF%D0%B4) [<img src="./icons/informatics.png" width="40" height="40">](https://github.com/maxbarsukov/itmo/tree/master/1%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0)[<img src="./icons/psql.svg" width="40" height="40">](https://github.com/maxbarsukov/itmo/tree/master/2%20%D0%B1%D0%B0%D0%B7%D1%8B%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)|
 |<https://notesitmo.github.io/cse-notes/first-course/firstcourse.html>|[<img src="./icons/physics.png" width="40" height="40">](https://notesitmo.github.io/cse-notes/first-course/firstcourse.html) [<img src="./icons/philosophy.png" width="40" height="40">](https://notesitmo.github.io/cse-notes/first-course/firstcourse.html) [<img src="./icons/opd.png" width="40" height="40">](https://notesitmo.github.io/cse-notes/first-course/firstcourse.html) [<img src="./icons/java.png" width="40" height="40">](https://notesitmo.github.io/cse-notes/first-course/firstcourse.html)|
-|\<T\>| [<img src="./icons/kik.png" width="40" height="40">](kik) [<img src="./icons/bjd.png" width="40" height="40">](bjd)|
+|\<T\>| [<img src="./icons/kik.png" width="40" height="40">](https://205826.github.io/KIK/) [<img src="./icons/java.png" width="40" height="40">](https://205826.github.io/C2C.html) [<img src="./icons/calculus.png" width="40" height="40">](https://205826.github.io/DL/)|
 |<https://picloud.pw/cloud/>|экземпляры лаб прошлых лет; ответы на ЦДО; |
 |<https://github.com/Roggired/ITMO>|Репозиторий с общей информацией по проге и опд. Там же можете найти требования к лабам, к отчетам (пример отчета), и всякие другие полезные вещи.|
 
@@ -216,17 +221,17 @@ graph TD;
 
 <a id="Подключение"></a>
 <details open>
-<summary align="center"><h2><b> Подключение и загрузка файлов </b></h2></summary>
+<summary align="center"><h3><b> Подключение и загрузка файлов </b></h3></summary>
 
 <a id="authorization"></a>
 
-### Авторизация в [se.ifmo.ru](https://se.ifmo.ru/)
+#### Авторизация в [se.ifmo.ru](https://se.ifmo.ru/)
 
 Логин: `sТабельныйНомер` (далее будет обозначаться как `s######`)  
 Пароль: [se.ifmo.ru/passwd](http://se.ifmo.ru/passwd) (далее будет обозначаться как `PASSWD`)
 
-## Подключение через консоль (powershell, bash, zsh, e.t.c)
 
+#### Подключение через консоль (powershell, bash, zsh, e.t.c)
 ```bash
 На выбор:
 1. ssh -p 2222 sXXXXXX@helios.cs.ifmo.ru
@@ -234,14 +239,7 @@ graph TD;
 3. ssh sXXXXXX@se.ifmo.ru -p 2222
 ```
 
-## [PuttY](https://putty.org.ru/download.html) (консоль)
-
-1. Имя хоста: `sXXXXXX@se.ifmo.ru`  
-2. Порт: `2222`  
-3. Нажимаем "Соединиться"  
-4. Пишем `PASSWD`
-
-## Загрузка файлов через консоль (powershell, bash, zsh, e.t.c)
+#### Загрузка файлов через консоль (powershell, bash, zsh, e.t.c)
 
 ```bash
 scp -P 2222 FileForUpload.java sXXXXXX@helios.se.ifmo.ru:DirectoryToUpload
@@ -253,48 +251,9 @@ scp -P 2222 FileForUpload.java sXXXXXX@helios.se.ifmo.ru:DirectoryToUpload
 scp -P 2222 README.md sXXXXXX@se.ifmo.ru:.
 ```
 
-## [WinSCP](https://winscp.net/eng/download.php) (для загрузки файлов)
+#### Создание `.bat` - файла для авто-подключения к серверу (консоль + для загрузки файлов)
 
-Протокол: `sftp`  
-Имя хоста: `se.ifmo.ru`  
-Порт: `2222`  
-Имя пользователя: `s######`  
-Пароль: `PASSWD`
-
-## [FileZilla](https://filezilla.ru/get/) (для загрузки файлов)
-
-Хост: `sftp://se.ifmo.ru`  
-Имя пользователя: `sXXXXXX`  
-Пароль: `PASSWD`  
-Порт: `2222`
-
-## Git (для загрузки файлов)
-
-### Альтернативный способ загрузить проект на сервак через git
-
-1. Создаём репозиторий на гитхабе и загружаем туда свои файлы через браузер: [туториал](https://www.youtube.com/watch?v=yjivWxxH0eE)
-2. Заходим на сервак
-3. Пишем `git clone <Ссылка на репозиторий>`
-
-</details>
-
-<a id="Лайфхаки по работе с сервером"></a>
-<details open>
-<summary align="center"><h2><b> Лайфхаки по работе с сервером </b></h2></summary>
-
-- `Tab` - может помочь вводить имена файлов (автозаполнение)
-- `Enter` - может помочь копировать  
-- `Cntrl+C` - **EOF**, чтобы оборвать выполнение чего угодно
-- `↑↓` - предыдущая / последующая команда
-- `Cntrl+shift+V / Cntrl+Shift+C` - **вставить из** / **скопировать в** буфера обмена  
-- `chmod -R 755 ./*` может помочь избавиться от ошибок доступа  
-- `chmod -R 700 ~` может помочь избавиться от любопытных глаз
-
-<a id="Создание `.bat` - файла для быстрого подключения к серверу"></a>
-<details>
-<summary align="center"><h2><b> Создание `.bat` - файла для быстрого подключения к серверу </b></h2></summary>
-
-**Уже готовый архив со всем необходимым для подключения можно скачать [здесь](https://205826.github.io/auto_connect_gelius.zip)**
+Уже готовый архив со всем необходимым для подключения можно скачать [здесь](https://205826.github.io/auto_connect_gelius.zip)
 > Никаких дополнительных программ для работы не нужно скачивать, следует лишь отредактировать `.bat` - файлы, написав свой `логин` и `пароль`
 
 Пример содержания такого файла:
@@ -312,11 +271,53 @@ rem FileZilla
 rem start "" "%ProgramFiles%\\FileZilla FTP Client\\filezilla.exe" sftp://sXXXXXX:PASSWORD@se.ifmo.ru:2222
 ```
 
+#### [PuttY](https://putty.org.ru/download.html) (консоль)
+
+1. Имя хоста: `sXXXXXX@se.ifmo.ru`  
+2. Порт: `2222`  
+3. Нажимаем "Соединиться"  
+4. Пишем `PASSWD`
+
+#### [WinSCP](https://winscp.net/eng/download.php) (для загрузки файлов)
+
+Протокол: `sftp`  
+Имя хоста: `se.ifmo.ru`  
+Порт: `2222`  
+Имя пользователя: `s######`  
+Пароль: `PASSWD`
+
+#### [FileZilla](https://filezilla.ru/get/) (для загрузки файлов)
+
+Хост: `sftp://se.ifmo.ru`  
+Имя пользователя: `sXXXXXX`  
+Пароль: `PASSWD`  
+Порт: `2222`
+
+#### Git (для загрузки файлов)
+
+1. Создаём репозиторий на гитхабе и загружаем туда свои файлы через браузер: [туториал](https://www.youtube.com/watch?v=yjivWxxH0eE)
+2. Заходим на сервак
+3. Пишем `git clone <Ссылка на репозиторий>`
+
 </details>
 
-<a id="Cоздание перманентной переменной окружения"></a>
+<a id="лайфхаки-по-работе-с-сервером"></a>
+<details open>
+<summary align="center"><h3><b> Лайфхаки по работе с сервером </b></h3></summary>
+
+- `Tab` - может помочь вводить имена файлов (автозаполнение)
+- `Enter` - может помочь копировать  
+- `Cntrl+C` - **EOF**, чтобы оборвать выполнение чего угодно
+- `↑↓` - предыдущая / последующая команда
+- `Cntrl+shift+V / Cntrl+Shift+C` - **вставить из** / **скопировать в** буфера обмена  
+- `chmod -R 755 ./*` может помочь избавиться от ошибок доступа  
+- `chmod -R 700 ~` может помочь избавиться от любопытных глаз
+
+</details>
+
+<a id="создание-перманентной-переменной-окружения"></a>
 <details>
-<summary align="center"><h2><b> Cоздание перманентной переменной окружения </b></h2></summary>
+<summary align="center"><h3><b> Cоздание перманентной переменной окружения </b></h3></summary>
 
 1. Создаем файлик .bash_profile в своей корневой директории `sXXXXXX`:
 
@@ -342,11 +343,11 @@ lab5="/home/studs/s######/{pathToFile}"; export lab5
 
 </details>
 
-<a id="Траблы"></a>
+<a id="траблы"></a>
 <details>
-<summary align="center"><h2><b> Траблы </b></h2></summary>
+<summary align="center"><h3><b> Траблы </b></h3></summary>
 
-### 1. Бывет такое, что JAVA перестаёт работать с ошибкой переполнения кучи (или java по дефолту 11 версии)
+#### JAVA: ошибка переполнения кучи или java по дефолту 11 версии, BindException
 
 ```bash
 [s######@helios ~]$ javac
@@ -376,7 +377,7 @@ killall -u `whoami`
 
 Третий вариант, просто дождаться 4х часов ночи, именно в это время происходит перезагрузка гелиуса
 
-### 2. Проблемы с базой данных и клиентскими и серверными приложениями (не запускается, переполнение кучи и т.д.)
+#### Проблемы с базой данных и клиентскими и серверными приложениями (не запускается, переполнение кучи и т.д.)
   
 - Посмотрите какие потоки работают:
 
@@ -394,7 +395,7 @@ kill <pid>
 
 <a id="Приколы"></a>
 <details>
-<summary align="center"><h2><b> Приколы </b></h2></summary>
+<summary align="center"><h3><b> Приколы </b></h3></summary>
 
 Get IP addresses
 
