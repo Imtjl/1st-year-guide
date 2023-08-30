@@ -182,9 +182,12 @@ graph TD;
 <summary><h3><b> Общежития </b></h3></summary>
 
 - `Вязьма` - общежитие на Вяземском переулке 5-7 лит.А
-- `Альпийка` - общежитие на Альписском переулке 15 к.2 лит.А
 - `Белорусская` - общежитие на Белорусской улице д.6 лит.А
+- `Альпийка` - общежитие на Альписском переулке 15 к.2 лит.А
 - `Ленсовета` - Общежитие на улице Ленсовета д.23 лит.А
+- `МСГ` -  Новоизмайловский пр., 16
+- `Доходный дом` - наб. р. Карповки, д. 22, корп. 2, лит. Б
+- `ЛТУ` - ул. Вавиловых, д. 12
 
 </details>
 
@@ -194,10 +197,13 @@ graph TD;
 <details open>
 <summary align="center"><h3><b> Сайты </b></h3></summary>
 
-- `май итмо` - [личный кабинет студента Университета ИТМО](https://my.itmo.ru/)
-- `ЦДО` - [платформа для тестирований по истории e.t.c.](https://de.ifmo.ru/)
+- `май итмо` - [расписание, стипа, выборность, физра, зачётка...](https://my.itmo.ru/)
+- `ЦДО` - [платформа для тестирований по истории, ITMOEnter, информатика...](https://de.ifmo.ru/)
 - `ИСУ` - [главная платформа университета](https://isu.ifmo.ru/)
-- `эс е ифмо` - [сайт с лабами ВТ](https://se.ifmo.ru/)
+- `се ифмо` - [сайт с лабами ВТ](https://se.ifmo.ru/)
+- `барс` - [баллы по предметам (актуальнее чем в май итмо)](https://bars.itmo.ru/)
+- `центр карьеры` - [центр карьеры обучающихся ИТМО](https://careers.itmo.ru/)
+- `апартаменты` - [сервис подбора арендного жилья](https://aparts.itmo.ru/)
 
 </details>
 
@@ -247,6 +253,7 @@ graph TD;
 |-|-|
 |worthant|[<img src="./icons/java.png" width="40" height="40">](https://github.com/worthant/Java_labs) [<img src="./icons/opd.png" width="40" height="40">](https://github.com/worthant/OPD) [<img src="./icons/informatics.png" width="40" height="40">](https://github.com/worthant/Informatics)[<img src="./icons/psql.svg" width="40" height="40">](https://github.com/worthant/Databases-course) [<img src="./icons/calculus.png" width="40" height="40">](https://github.com/worthant/Higher-Mathematics)|
 |Black Rider|[<img src="./icons/nodes.png" width="40" height="40">](https://t.me/+qO4dE84coBlkNDU6) [<img src="./icons/opd.png" width="40" height="40">](https://github.com/eliteSufferer/ITMO_Studies/tree/main/OPD_Labs) [<img src="./icons/psql.svg" width="40" height="40">](https://github.com/eliteSufferer/ITMO_Studies/tree/main/Databases)|
+|Zerumi|[<img src="./icons/opd.png" width="40" height="40">](https://github.com/Zerumi/Ifmo-BPA_Labs) [<img src="./icons/java.png" width="40" height="40">](https://github.com/Zerumi?tab=repositories&q=no) [<img src="./icons/informatics.png" width="40" height="40">](https://github.com/Zerumi/inf_labs) [<img src="./icons/psql.svg" width="40" height="40">](https://github.com/Zerumi/bd1_180223_367837)|
 |maxbarsukov|[<img src="./icons/java.png" width="40" height="40">](https://github.com/maxbarsukov/itmo/tree/master/1-2%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5) [<img src="./icons/opd.png" width="40" height="40">](https://github.com/maxbarsukov/itmo/tree/master/1-2%20%D0%BE%D0%BF%D0%B4) [<img src="./icons/informatics.png" width="40" height="40">](https://github.com/maxbarsukov/itmo/tree/master/1%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0)[<img src="./icons/psql.svg" width="40" height="40">](https://github.com/maxbarsukov/itmo/tree/master/2%20%D0%B1%D0%B0%D0%B7%D1%8B%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)|
 |<https://notesitmo.github.io/cse-notes/first-course/firstcourse.html>|[<img src="./icons/physics.png" width="40" height="40">](https://notesitmo.github.io/cse-notes/first-course/firstcourse.html) [<img src="./icons/philosophy.png" width="40" height="40">](https://notesitmo.github.io/cse-notes/first-course/firstcourse.html) [<img src="./icons/opd.png" width="40" height="40">](https://notesitmo.github.io/cse-notes/first-course/firstcourse.html) [<img src="./icons/java.png" width="40" height="40">](https://notesitmo.github.io/cse-notes/first-course/firstcourse.html)|
 |\<T\>| [<img src="./icons/kik.png" width="40" height="40">](https://205826.github.io/KIK/) [<img src="./icons/java.png" width="40" height="40">](https://205826.github.io/C2C.html) [<img src="./icons/calculus.png" width="40" height="40">](https://205826.github.io/DL/)|
