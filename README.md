@@ -507,6 +507,7 @@ I(83.01-90)-->J[4B];
 |ссылка на гугл таблицу|описание|
 |-|-|
 |[СУиР 1 курс / 1 семестр БаРС](https://docs.google.com/spreadsheets/d/1rXcCvcgKCp71O90rViDvCNEO5R-fpYi0VmZkV8cPYfQ/edit#gid=0)|Гугл таблица с разбалловкой по ВСЕМ предметам 1 семестра 1 курса СУиРа|
+|[СППО/ИВТ 1 курс 1 семестр БаРС](https://docs.google.com/spreadsheets/d/1gXsenfVu86bYECSrYMZoew4wSyHWcE9GCHP4V_yF7Oc/edit?usp=drivesdk)|Гугл таблица с разбалловкой по ВСЕМ предметам 1 семестра 1 курса СУиРа|
 |[СППО/ИВТ 1 курс 2 семестр БаРС](https://docs.google.com/spreadsheets/d/1I43z70oygEIbQNpOb5irSJv1jI42xsz7mNst7oQpFbs/edit#gid=0) |Гугл таблица с разбалловкой по ВСЕМ предметам 2 семестра 1 курса ВТ|
 
 ## ITMO ENTER
