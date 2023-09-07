@@ -249,9 +249,11 @@ graph TD;
 |worthant|[<img src="./icons/java.png" width="40" height="40">](https://github.com/worthant/Java_labs) [<img src="./icons/opd.png" width="40" height="40">](https://github.com/worthant/OPD) [<img src="./icons/informatics.png" width="40" height="40">](https://github.com/worthant/Informatics)[<img src="./icons/psql.svg" width="40" height="40">](https://github.com/worthant/Databases-course) [<img src="./icons/calculus.png" width="40" height="40">](https://github.com/worthant/Higher-Mathematics)|
 |Black Rider|[<img src="./icons/nodes.png" width="40" height="40">](https://t.me/+qO4dE84coBlkNDU6) [<img src="./icons/opd.png" width="40" height="40">](https://github.com/eliteSufferer/ITMO_Studies/tree/main/OPD_Labs) [<img src="./icons/psql.svg" width="40" height="40">](https://github.com/eliteSufferer/ITMO_Studies/tree/main/Databases)|
 |Zerumi|[<img src="./icons/opd.png" width="40" height="40">](https://github.com/Zerumi/Ifmo-BPA_Labs) [<img src="./icons/java.png" width="40" height="40">](https://github.com/Zerumi?tab=repositories&q=no) [<img src="./icons/informatics.png" width="40" height="40">](https://github.com/Zerumi/inf_labs) [<img src="./icons/psql.svg" width="40" height="40">](https://github.com/Zerumi/bd1_180223_367837)|
-|maxbarsukov|[<img src="./icons/java.png" width="40" height="40">](https://github.com/maxbarsukov/itmo/tree/master/1-2%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5) [<img src="./icons/opd.png" width="40" height="40">](https://github.com/maxbarsukov/itmo/tree/master/1-2%20%D0%BE%D0%BF%D0%B4) [<img src="./icons/informatics.png" width="40" height="40">](https://github.com/maxbarsukov/itmo/tree/master/1%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0)[<img src="./icons/psql.svg" width="40" height="40">](https://github.com/maxbarsukov/itmo/tree/master/2%20%D0%B1%D0%B0%D0%B7%D1%8B%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)|
+|maxbarsukov|[<img src="./icons/java.png" width="40" height="40">](https://github.com/maxbarsukov/itmo/tree/master/1-2%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5) [<img src="./icons/opd.png" width="40" height="40">](https://github.com/maxbarsukov/itmo/tree/master/1-2%20%D0%BE%D0%BF%D0%B4) [<img src="./icons/informatics.png" width="40" height="40">](https://github.com/maxbarsukov/itmo/tree/master/1%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0) [<img src="./icons/psql.svg" width="40" height="40">](https://github.com/maxbarsukov/itmo/tree/master/2%20%D0%B1%D0%B0%D0%B7%D1%8B%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85)|
 |<https://notesitmo.github.io/cse-notes/first-course/firstcourse.html>|[<img src="./icons/physics.png" width="40" height="40">](https://notesitmo.github.io/cse-notes/first-course/firstcourse.html) [<img src="./icons/philosophy.png" width="40" height="40">](https://notesitmo.github.io/cse-notes/first-course/firstcourse.html) [<img src="./icons/opd.png" width="40" height="40">](https://notesitmo.github.io/cse-notes/first-course/firstcourse.html) [<img src="./icons/java.png" width="40" height="40">](https://notesitmo.github.io/cse-notes/first-course/firstcourse.html)|
 |[\<T\>](https://205826.github.io/)| [<img src="./icons/kik.png" width="40" height="40">](https://205826.github.io/KIK/) [<img src="./icons/java.png" width="40" height="40">](https://205826.github.io/C2C.html) [<img src="./icons/calculus.png" width="40" height="40">](https://205826.github.io/DL/)|
+|[Roman Vassilchenko](https://github.com/RomanVassilchenko/ITMOProjects/)| [<img src="./icons/opd.png" width="40" height="40">](https://github.com/RomanVassilchenko/ITMO-My-Projects/tree/main/Year-1/Basics%20of%20professional%20activity,%20ОПД,%20Основы%20профессиональной%20деятельности) [<img src="./icons/nodes.png" width="40" height="40">](https://github.com/RomanVassilchenko/ITMO-My-Projects/tree/main/Year-1/Discrete%20math,%20Дискретная%20математика) [<img src="./icons/informatics.png" width="40" height="40">](https://github.com/RomanVassilchenko/ITMO-My-Projects/tree/main/Year-1/Informatics,%20Информатика) [<img src="./icons/java.png" width="40" height="40">](https://github.com/RomanVassilchenko/ITMO-My-Projects/tree/main/Year-1/Programming-Java,%20Программирование%20(Java))|
+|[Kamil](https://github.com/pro100kamil/itmo/)|[<img src="./icons/nodes.png" width="40" height="40">](https://github.com/pro100kamil/itmo/tree/master/labs/dm) [<img src="./icons/java.png" width="40" height="40">](https://github.com/pro100kamil/itmo/tree/master/labs/java) [<img src="./icons/opd.png" width="40" height="40">](https://github.com/pro100kamil/itmo/tree/master/labs/opd) [<img src="./icons/informatics.png" width="40" height="40">](https://github.com/pro100kamil/itmo/tree/master/labs/informatics) |
 |<https://picloud.pw/cloud/>|экземпляры лаб прошлых лет; ответы на ЦДО; |
 |<https://github.com/Roggired/ITMO>|Репозиторий с общей информацией по проге и опд. Там же можете найти требования к лабам, к отчетам (пример отчета), и всякие другие полезные вещи.|
 
@@ -466,7 +468,16 @@ Broadcast message
 Здесь могла быть ваша реклама
 ```
 
-[//]: # (Игра в minecraft по shh:)
+Игра в minecraft по shh:)
+```bash
+# HOST
+ssh -R GeliusPort:localhost:25565 sYOUR_ID@helios.se.ifmo.ru -fNT -p 2222
+# CLIENT
+ssh sYOUR_ID@helios.se.ifmo.ru -p 2222 -L 25565:localhost:GeliusPort
+# GeliusPort - any number from 1024 to 32000
+```
+
+
 [//]: # (TODO: сделать гайд)
 
 </details>
@@ -1054,6 +1065,58 @@ ls -R | grep "\..*:" | sed "s/://" | sed "s/^\./ls -1dp \./" | sed "s/$/\/\*/" |
 ## Официальные материалы лежат в учебной документации ИСУ
 
 - ИСУ ИТМО -> Учебный процесс -> [Учебная документация](https://isu.ifmo.ru/pls/apex/f?p=2143:6:117252886124089::NO:RP:)
+
+# Разборы/Ссылки
+* [Обычный день в университете ИТМО](https://youtu.be/A4zNrAIWMbA)
+* **Дискретная математика**
+  * 1 сем
+    1. ~~Теория множеств~~
+    2. ~~Булева Алгебра и её приложения (\~октябрь)~~ 
+    3. Представние чисел в ЭВМ (~ноябрь): [YT](https://www.youtube.com/watch?v=FqBsaFrGygU) + [miro](https://miro.com/app/board/uXjVPD8tOSw=/) && [miro](https://miro.com/app/board/uXjVPEJHPlY=/)
+    4. Выполнение арефметических операций в ЭВМ (~декабрь): [YT](https://youtu.be/Z5nuY7gJ_WA) + [miro](https://miro.com/app/board/uXjVMdyvtEY=/?share_link_id=175425384701)
+    5. [Шуточный тест на логическое мышление (не оценивается)](http://testoteka.narod.ru/pozn/1/10-on.html)
+  * ДЗ
+    1. [Умножение с/без корекции](https://owl-from-hogvarts.github.io/)
+  * Курсач
+    1. [Схема логических элементов онлайн](https://www.semestr.online/graph/logic-gate.php)
+    2. [Карты карно](https://205826.github.io/karnaugh_map.html)
+  * 2 сем
+    1. Синтез комбинационных схем: [YT](https://youtu.be/yXaMcE07B80) + [miro](https://miro.com/app/board/uXjVPnCJ4FY=/?share_link_id=995621403527) && [miro](https://miro.com/app/board/uXjVPnzEUwg=/)
+    2. Логика: [miro](https://miro.com/app/board/uXjVMNbLwsU=/?share_link_id=206775222210) + [miro](https://miro.com/app/board/uXjVMQhH1-4=/?share_link_id=166755873683)
+    3. Тесты по графам: [YT](https://youtu.be/ChaLx3qAi3E) + [miro](https://miro.com/app/board/uXjVMW0ZvTo=/?share_link_id=351461725637)
+    4. Метод ветвей и границ: [YA-disk](https://disk.yandex.ru/d/kI8UZYR0XdnEMg) +  [miro](https://miro.com/app/board/uXjVMR1GLHI=/) + [miro](https://miro.com/app/board/uXjVMTTAaew=/?share_link_id=9250619309) && [T2P](https://205826.github.io/T2P/T2P_EDITOR.html?id=199997)
+    5. Aлгебра предикатов: [YT](https://www.youtube.com/live/XRI6JUG5mQE?feature=share) + [miro](https://miro.com/app/board/uXjVMQhH1-4=/)
+  * ДЗ
+    1. [1-7 дз](https://band-of-four.github.io/discrete-math-homework-second-term/#/)
+  * Курсач
+    1. [Гайд по курсовой работе по дискретной математике](https://youtu.be/CpTFmQTnJuI) 
+    2. [Главная ошибка курсача 2023 года](https://miro.com/app/board/uXjVMA9sHWw=/?share_link_id=233919562798)
+* **Вышмат**
+  * https://disk.yandex.ru/d/q1A7C3CjNeUchQ - Разбор МА
+  * https://miro.com/app/board/uXjVPz_HCLU=/?share_link_id=198204362153 - Рубежные тесты по ЛГ
+  * https://miro.com/app/board/uXjVP40RZdw=/ - Производные
+  * https://miro.com/app/board/uXjVMU8NbCU=/?share_link_id=892953009156 - Определённые интеграллы 
+  * https://youtu.be/pTSLdRs0Fg8 - Математика (МА КР-1) Методы неопределенного интегрирования
+  * https://miro.com/app/board/uXjVPgqKR_w=/?share_link_id=155477578227 - Неопределенные интеграллы
+  * https://miro.com/app/board/uXjVMVFJkoc=/?share_link_id=538887998619 - Диагонолизация матрицы
+  * https://miro.com/app/board/uXjVP3Injis=/?share_link_id=118264003172 - Линейные подпространства
+  * https://www.youtube.com/playlist?list=PLj83Zl_bweJzjexdKEIJLz7I7KlpnBL6R - ЛА и МА 2022-23
+  * https://www.youtube.com/playlist?list=PLVjLpKXnAGLXPaS7FRBjd5yZeXwJxZil2 - База лингема
+  * https://miro.com/app/board/uXjVMAWKeko=/?share_link_id=705783863276 - Математика - Экзамен
+  * https://miro.com/app/board/uXjVPx7q7vg=/?share_link_id=850518094527 - Матанализ Экзамен
+* **ОПД**
+  * https://youtu.be/5DXYGx7RtZY - ОПД с 0
+  * https://www.youtube.com/playlist?list=PLBWafxh1dFuwbs2bc_ba_1FIm4SzFYg2p - ОПД 2019-21
+  * https://youtu.be/vuW08kTodJM - Трассировка микрокоманд / Рубеж 3 (полный разбор)
+  * https://miro.com/app/board/uXjVMAWKeko=/?share_link_id=152689197212 - Рубеж
+* **Прога**
+  * https://youtu.be/9SQm6IsKJuo - Мануал по второй лабе по программированию 
+  * https://youtu.be/mDfz0MojoM4 - Разбор рубежки по проге
+  * https://youtu.be/bZP948U9VTw - Разбор рубежки по проге 2
+* **БД**
+  * https://miro.com/app/board/uXjVM7mDWzg=/?share_link_id=706821135550 - Экзамен
+* **Информатика**
+  * [Регулярные выражения](https://youtube.com/playlist?list=PLA0M1Bcd0w8w8gtWzf9YkfAxFCgDb09pA)
 
 # Алгосы (Олпрога)
 
