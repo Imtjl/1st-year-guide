@@ -195,7 +195,9 @@ graph TD;
 - [ITMOLNIA](https://t.me/itmolnia)
 - [БЛУМ БЛОГ(АНТИ ИТМЕМ)](https://vk.com/blumblog)
 - [Гордые Лица СУиРа на каждый день](https://vk.com/suiruberallen)
+- [Обычный день в университете ИТМО](https://youtu.be/A4zNrAIWMbA)
 - [ИТМЕМ](https://vk.com/itmem)
+- [1st_year_guide_YT_mirror](https://drive.google.com/drive/folders/1TN6Pyw7vxGmOR00KlnxCjn6PIRvvJZ3G)
 
 ## **Прочее**
 - `Cем` - семестр, пол учебного года
@@ -340,7 +342,7 @@ rem start "" "%ProgramFiles%\\FileZilla FTP Client\\filezilla.exe" sftp://sXXXXX
 
 ### Git (для загрузки файлов)
 
-1. Создаём репозиторий на гх и [загружаем туда свои файлы через браузер](https://www.youtube.com/watch?v=yjivWxxH0eE)
+1. Создаём репозиторий на гх и [загружаем туда свои файлы через браузер](https://youtu.be/yjivWxxH0eE)
 2. Заходим на сервак
 3. Пишем `git clone <Ссылка на репозиторий>`
 
@@ -553,7 +555,7 @@ I(83.01-90)-->J[4B];
 3. 6 лабораторных:
     1. Системы счисления: n-ричная (вещественная), фибоначчиевая, нега-позиционная, симметричная, факториальная (`3 балла`)
     2. Код Хэмминга (`4 балла`)
-    3. Регулярные выражения. `import re` в Python (8 баллов)
+    3. [Регулярные выражения](https://youtube.com/playlist?list=PLA0M1Bcd0w8w8gtWzf9YkfAxFCgDb09pA). `import re` в Python (8 баллов)
     4. Написание парсера на Python из XML/JSON/YAML в XML/JSON/YAML, наверное самая сложная лаба (`8 баллов`)
     5. Поразрядное сложение чисел в Exel (`5 баллов`)
     6. Воссоздание скриншота страницы книги в LaTeX. [Онлайн-редактор](https://overleaf.com/) (`7 баллов`)
@@ -603,6 +605,18 @@ I(83.01-90)-->J[4B];
   - [Миро ЛГ 1 сем 1-9](https://miro.com/app/board/uXjVPY6uyi4=/)
   - [Миро МАТ 2 сем 1-4](https://miro.com/app/board/uXjVPqAiEZ8=/)
   - [Миро ЛГ 2 сем 3-6](https://miro.com/app/board/uXjVPqAQmLw=/)
+- Разбор МА: [YA-disk](https://disk.yandex.ru/d/q1A7C3CjNeUchQ)
+- Рубежные тесты по ЛГ: [miro](https://miro.com/app/board/uXjVPz_HCLU=/?share_link_id=198204362153)
+- Производные: [miro](https://miro.com/app/board/uXjVP40RZdw=/)
+- Определённые интеграллы: [miro](https://miro.com/app/board/uXjVMU8NbCU=/?share_link_id=892953009156)
+- Математика (МА КР-1) Методы неопределенного интегрирования: [YT](https://youtu.be/pTSLdRs0Fg8)
+- Неопределенные интеграллы: [miro](https://miro.com/app/board/uXjVPgqKR_w=/?share_link_id=155477578227)
+- Диагонолизация матрицы: [miro](https://miro.com/app/board/uXjVMVFJkoc=/?share_link_id=538887998619)
+- Линейные подпространства: [miro](https://miro.com/app/board/uXjVP3Injis=/?share_link_id=118264003172)
+- ЛА и МА 2022-23: [YT](https://www.youtube.com/playlist?list=PLj83Zl_bweJzjexdKEIJLz7I7KlpnBL6R)
+- База лингема: [YT](https://www.youtube.com/playlist?list=PLVjLpKXnAGLXPaS7FRBjd5yZeXwJxZil2)
+- Математика - Экзамен: [miro](https://miro.com/app/board/uXjVMAWKeko=/?share_link_id=705783863276)
+- Матанализ Экзамен: [miro](https://miro.com/app/board/uXjVPx7q7vg=/?share_link_id=850518094527)
 - [Задачник для линала с ответами](https://github.com/Imtjl/1st-year-guide/blob/main/BOOKS/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%BD%D0%B8%D0%BA_%D0%B4%D0%BB%D1%8F_%D0%BB%D0%B8%D0%BD%D0%B0%D0%BB%D0%B0_%D1%81_%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%B0%D0%BC%D0%B8.pdf)
 
 На результаты тестов на OnlineTestPad можно просто скидывать ссылки, таким образом объеденяя ответы. [Exemple](https://onlinetestpad.com/y4wvbdpkg6lsm). В итоге можно получить что-то [такое](https://docs.google.com/spreadsheets/d/17AxW1uOUDC2pFC2_pAqyAEHv_qL8FZxsLnpC8jVggfs/edit?usp=sharing) или [такое](https://205826.github.io/DL/). [Скрипт для автоматизации сбора данных по ссылкам](https://github.com/205826/DL/).
@@ -645,15 +659,18 @@ I(83.01-90)-->J[4B];
 
 ## Прочие материалы
 
-<a id="прога-рубежка1"></a>
+<a id="прога-рубежка1"></a> 
+- [Разбор рубежки по проге](https://youtu.be/mDfz0MojoM4)
 - [Рубежка по проге](https://miro.com/app/board/uXjVP8oK04Y=/)
 <a id="прога-рубежка2"></a>
+- [Разбор рубежки по проге 2](https://youtu.be/bZP948U9VTw)
 - [Вторая рубежка по проге](https://miro.com/app/board/uXjVP4NqLxI=/) P.S. Во втором задании официально ответ пустой
 <a id="мануал-по-java"></a>
 - [Мануал по Java](https://apploidx.github.io/programming-manual/)
 - [Free Java Tutorial](https://www.examclouds.com)
 - [Руководство по языку программирования Java](https://metanit.com/java/tutorial/)
-- [сайтик с паттернами и полезными советами по написанию чистого кода](https://refactoring.guru/ru/design-patterns/java) (без впн не работает)
+- [Cайтик с паттернами и полезными советами по написанию чистого кода](https://refactoring.guru/ru/design-patterns/java) (без впн не работает)
+- [Мануал по второй лабе по программированию](https://youtu.be/9SQm6IsKJuo)
 
 - [Вопросы для собеседования на Java Developer](https://github.com/enhorse/java-interview)
 - [Ещё один способ подготовиться к собеседованию](https://neetcode.io/) + [решения](https://github.com/neetcode-gh/leetcode)
@@ -750,6 +767,7 @@ main[1] `step` - do 1 step
 > [Журнал успеваемости потока 2022-23 учебного года 1 семестра](https://docs.google.com/spreadsheets/d/1zC5niWm4k5SCJjvgOMn2CoUDgU-gYnZDTG8nnSgd2x4/edit#gid=1786764627)  
 > [Журнал успеваемости потока 2022-23 учебного года 2 семестра](https://docs.google.com/spreadsheets/d/1g9FqdxhUUI6HioKApj4tcWeCKzqslOEMd2LUdvy6IXM/edit#gid=215092466)
 
+- [ОПД с 0 (YT)](https://youtu.be/5DXYGx7RtZY)
 - [Гайд по человеческой трассировке, BCOMP Command Line Interface и ассемблеру](https://github.com/owl-from-hogvarts/OPD-guide#trace)
 - [Перевод гайда выше на русский (outdated)](https://github.com/Zerumi/OPD-guide-RU-)
 - [Методичка](https://se.ifmo.ru/documents/10180/38002/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5+%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D1%8F+%D0%BA+%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8E+%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D1%8B%D1%85+%D1%80%D0%B0%D0%B1%D0%BE%D1%82+%D0%B8+%D1%80%D1%83%D0%B1%D0%B5%D0%B6%D0%BD%D0%BE%D0%B3%D0%BE+%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F+%D0%91%D0%AD%D0%92%D0%9C+2019+bcomp-ng.pdf/d5a1be02-ad3f-4c43-8032-a2a04d6db12e)
@@ -764,7 +782,9 @@ main[1] `step` - do 1 step
 - [YT](https://youtube.com/c/SergeKlimenkov)
 - [Как выжить студентам Дмитрия Борисовича Афанасьева](https://se.ifmo.ru/~dima/ovt/)
 - [Стандартные потоки ввода/вывода](http://xgu.ru/wiki/Стандартные_потоки_ввода/вывода)
-- [Регулярки для опд (трени + quick referenses)](https://regex101.com/)
+- [Регулярки для опд (трени + quick referenses)](https://regex101.com/) 
+- [ОПД 2019-21 (YT)](https://www.youtube.com/playlist?list=PLBWafxh1dFuwbs2bc_ba_1FIm4SzFYg2p)
+- [Трассировка микрокоманд / Рубеж 3 (полный разбор)](https://youtu.be/vuW08kTodJM)
 
 
 <a id="опд-автомат"></a>
@@ -831,7 +851,7 @@ main[1] `step` - do 1 step
 
     - [контроллеры](https://youtu.be/Ya8bc9n6uXY?list=PLBWafxh1dFuwbs2bc_ba_1FIm4SzFYg2p) (в синей библии хорошо расписано)
     - сети, маршрутизация и передача данных по сетям
-    - память (в том числе [виртуальная память](https://www.youtube.com/watch?v=pB7cPle-o24))
+    - память (в том числе [виртуальная память](https://youtu.be/pB7cPle-o24))
 
 
 <p align="center"><b> > Сборник расписанных билетов к экзамену смотрите <a href="./OPD">прямо в этом репозитории</a> < </b></p>
@@ -1034,25 +1054,42 @@ ls -R | grep "\..*:" | sed "s/://" | sed "s/^\./ls -1dp \./" | sed "s/$/\/\*/" |
 Лекция занимает 1-2 пары, со второй пары могут отпускать или на второй паре происходит перепись. Переписывать кр можно сколько угодно раз.  
 У дискрадеда можно списать, да и задания контрольных не меняются из года в год, так что самое сложное в этом предмете - это ДЗ и курсовая (варианты почти у всех индивидуальные). Их сдача происходит дистанционно, необходимо присылать на почту дискрадеда docx или pdf с решением варика.  
 
-ДЗ в первом семе:  
-1. Представление чисел с фиксированной и плавающей запятой в различных форматах  
-2. Сложение целых чисел  
-3. Вычитание целых чисел  
-4. Умножения чисел с фиксированной запятой  
-5. Деление чисел с фиксированной запятой  
-6. Сложение чисел с плавающей запятой  
-7. Умножение чисел с плавающей запятой  
-8. Деление чисел с плавающей запятой
-* Курсач: Синтез комбинационных схем  
- 
-ДЗ во втором семе:  
-1. Поиск хроматическое число  
-2. Алгоритм Дейкстры  
-3. Поиск пути с наибольшей пропускной способностью  
-4. Планаризация графа  
-5. Доказательство изоморфности двух графов  
-6. Прикладное использование графа
-* Курсач: Нечёткий вывод по схеме «Мамдани»  
+* 1 сем
+  * КР
+    1. Теория множеств
+    2. Булева Алгебра и её приложения (~октябрь)
+    3. Представние чисел в ЭВМ (~ноябрь): [YT](https://youtu.be/FqBsaFrGygU) + [miro](https://miro.com/app/board/uXjVPD8tOSw=/) && [miro](https://miro.com/app/board/uXjVPEJHPlY=/)
+    4. Выполнение арефметических операций в ЭВМ (~декабрь): [YT](https://youtu.be/Z5nuY7gJ_WA) + [miro](https://miro.com/app/board/uXjVMdyvtEY=/?share_link_id=175425384701)
+    5. [Шуточный тест на логическое мышление (не оценивается)](http://testoteka.narod.ru/pozn/1/10-on.html)
+  * ДЗ
+    1. Представление чисел с фиксированной и плавающей запятой в различных форматах
+    2. Сложение целых чисел
+    3. Вычитание целых чисел
+    4. [Умножения чисел с фиксированной запятой](https://owl-from-hogvarts.github.io/)
+    5. Деление чисел с фиксированной запятой
+    6. Сложение чисел с плавающей запятой
+    7. Умножение чисел с плавающей запятой
+    8. Деление чисел с плавающей запятой
+  * Курсач: Синтез комбинационных схем
+    1. [Схема логических элементов онлайн](https://www.semestr.online/graph/logic-gate.php)
+    2. [Карты карно](https://205826.github.io/karnaugh_map.html)
+* 2 сем
+  * КР
+    1. Синтез комбинационных схем: [YT](https://youtu.be/yXaMcE07B80) + [miro](https://miro.com/app/board/uXjVPnCJ4FY=/?share_link_id=995621403527) && [miro](https://miro.com/app/board/uXjVPnzEUwg=/)
+    2. Логика: [miro](https://miro.com/app/board/uXjVMNbLwsU=/?share_link_id=206775222210) + [miro](https://miro.com/app/board/uXjVMQhH1-4=/?share_link_id=166755873683)
+    3. Тесты по графам: [YT](https://youtu.be/ChaLx3qAi3E) + [miro](https://miro.com/app/board/uXjVMW0ZvTo=/?share_link_id=351461725637)
+    4. Метод ветвей и границ: [YA-disk](https://disk.yandex.ru/d/kI8UZYR0XdnEMg) +  [miro](https://miro.com/app/board/uXjVMR1GLHI=/) + [miro](https://miro.com/app/board/uXjVMTTAaew=/?share_link_id=9250619309) && [T2P](https://205826.github.io/T2P/T2P_EDITOR.html?id=199997)
+    5. Aлгебра предикатов: [YT](https://www.youtube.com/live/XRI6JUG5mQE?feature=share) + [miro](https://miro.com/app/board/uXjVMQhH1-4=/)
+  * ДЗ
+    1. [Поиск хроматическое число](https://band-of-four.github.io/discrete-math-homework-second-term/#/)
+    2. [Алгоритм Дейкстры](https://band-of-four.github.io/discrete-math-homework-second-term/#/)
+    3. [Поиск пути с наибольшей пропускной способностью](https://band-of-four.github.io/discrete-math-homework-second-term/#/)
+    4. [Планаризация графа](https://band-of-four.github.io/discrete-math-homework-second-term/#/4)
+    5. [Доказательство изоморфности двух графов](https://band-of-four.github.io/discrete-math-homework-second-term/#/)
+    6. [Прикладное использование графа](https://band-of-four.github.io/discrete-math-homework-second-term/#/)
+  * Курсач: Нечёткий вывод по схеме «Мамдани»
+    1. [Гайд по курсовой работе по дискретной математике](https://youtu.be/CpTFmQTnJuI) 
+    2. [Главная ошибка курсача 2023 года](https://miro.com/app/board/uXjVMA9sHWw=/?share_link_id=233919562798)
 
 <a id="дискра-автомат"></a>
 
@@ -1065,58 +1102,6 @@ ls -R | grep "\..*:" | sed "s/://" | sed "s/^\./ls -1dp \./" | sed "s/$/\/\*/" |
 ## Официальные материалы лежат в учебной документации ИСУ
 
 - ИСУ ИТМО -> Учебный процесс -> [Учебная документация](https://isu.ifmo.ru/pls/apex/f?p=2143:6:117252886124089::NO:RP:)
-
-# Разборы/Ссылки
-* [Обычный день в университете ИТМО](https://youtu.be/A4zNrAIWMbA)
-* **Дискретная математика**
-  * 1 сем
-    1. ~~Теория множеств~~
-    2. ~~Булева Алгебра и её приложения (\~октябрь)~~ 
-    3. Представние чисел в ЭВМ (~ноябрь): [YT](https://www.youtube.com/watch?v=FqBsaFrGygU) + [miro](https://miro.com/app/board/uXjVPD8tOSw=/) && [miro](https://miro.com/app/board/uXjVPEJHPlY=/)
-    4. Выполнение арефметических операций в ЭВМ (~декабрь): [YT](https://youtu.be/Z5nuY7gJ_WA) + [miro](https://miro.com/app/board/uXjVMdyvtEY=/?share_link_id=175425384701)
-    5. [Шуточный тест на логическое мышление (не оценивается)](http://testoteka.narod.ru/pozn/1/10-on.html)
-  * ДЗ
-    1. [Умножение с/без корекции](https://owl-from-hogvarts.github.io/)
-  * Курсач
-    1. [Схема логических элементов онлайн](https://www.semestr.online/graph/logic-gate.php)
-    2. [Карты карно](https://205826.github.io/karnaugh_map.html)
-  * 2 сем
-    1. Синтез комбинационных схем: [YT](https://youtu.be/yXaMcE07B80) + [miro](https://miro.com/app/board/uXjVPnCJ4FY=/?share_link_id=995621403527) && [miro](https://miro.com/app/board/uXjVPnzEUwg=/)
-    2. Логика: [miro](https://miro.com/app/board/uXjVMNbLwsU=/?share_link_id=206775222210) + [miro](https://miro.com/app/board/uXjVMQhH1-4=/?share_link_id=166755873683)
-    3. Тесты по графам: [YT](https://youtu.be/ChaLx3qAi3E) + [miro](https://miro.com/app/board/uXjVMW0ZvTo=/?share_link_id=351461725637)
-    4. Метод ветвей и границ: [YA-disk](https://disk.yandex.ru/d/kI8UZYR0XdnEMg) +  [miro](https://miro.com/app/board/uXjVMR1GLHI=/) + [miro](https://miro.com/app/board/uXjVMTTAaew=/?share_link_id=9250619309) && [T2P](https://205826.github.io/T2P/T2P_EDITOR.html?id=199997)
-    5. Aлгебра предикатов: [YT](https://www.youtube.com/live/XRI6JUG5mQE?feature=share) + [miro](https://miro.com/app/board/uXjVMQhH1-4=/)
-  * ДЗ
-    1. [1-7 дз](https://band-of-four.github.io/discrete-math-homework-second-term/#/)
-  * Курсач
-    1. [Гайд по курсовой работе по дискретной математике](https://youtu.be/CpTFmQTnJuI) 
-    2. [Главная ошибка курсача 2023 года](https://miro.com/app/board/uXjVMA9sHWw=/?share_link_id=233919562798)
-* **Вышмат**
-  * https://disk.yandex.ru/d/q1A7C3CjNeUchQ - Разбор МА
-  * https://miro.com/app/board/uXjVPz_HCLU=/?share_link_id=198204362153 - Рубежные тесты по ЛГ
-  * https://miro.com/app/board/uXjVP40RZdw=/ - Производные
-  * https://miro.com/app/board/uXjVMU8NbCU=/?share_link_id=892953009156 - Определённые интеграллы 
-  * https://youtu.be/pTSLdRs0Fg8 - Математика (МА КР-1) Методы неопределенного интегрирования
-  * https://miro.com/app/board/uXjVPgqKR_w=/?share_link_id=155477578227 - Неопределенные интеграллы
-  * https://miro.com/app/board/uXjVMVFJkoc=/?share_link_id=538887998619 - Диагонолизация матрицы
-  * https://miro.com/app/board/uXjVP3Injis=/?share_link_id=118264003172 - Линейные подпространства
-  * https://www.youtube.com/playlist?list=PLj83Zl_bweJzjexdKEIJLz7I7KlpnBL6R - ЛА и МА 2022-23
-  * https://www.youtube.com/playlist?list=PLVjLpKXnAGLXPaS7FRBjd5yZeXwJxZil2 - База лингема
-  * https://miro.com/app/board/uXjVMAWKeko=/?share_link_id=705783863276 - Математика - Экзамен
-  * https://miro.com/app/board/uXjVPx7q7vg=/?share_link_id=850518094527 - Матанализ Экзамен
-* **ОПД**
-  * https://youtu.be/5DXYGx7RtZY - ОПД с 0
-  * https://www.youtube.com/playlist?list=PLBWafxh1dFuwbs2bc_ba_1FIm4SzFYg2p - ОПД 2019-21
-  * https://youtu.be/vuW08kTodJM - Трассировка микрокоманд / Рубеж 3 (полный разбор)
-  * https://miro.com/app/board/uXjVMAWKeko=/?share_link_id=152689197212 - Рубеж
-* **Прога**
-  * https://youtu.be/9SQm6IsKJuo - Мануал по второй лабе по программированию 
-  * https://youtu.be/mDfz0MojoM4 - Разбор рубежки по проге
-  * https://youtu.be/bZP948U9VTw - Разбор рубежки по проге 2
-* **БД**
-  * https://miro.com/app/board/uXjVM7mDWzg=/?share_link_id=706821135550 - Экзамен
-* **Информатика**
-  * [Регулярные выражения](https://youtube.com/playlist?list=PLA0M1Bcd0w8w8gtWzf9YkfAxFCgDb09pA)
 
 # Алгосы (Олпрога)
 
