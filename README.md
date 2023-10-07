@@ -707,31 +707,166 @@ java HelloWorld
 
 
 ### Несколько *.java* + библиотеки
-Теперь допустим у нас несколько *.java* файлов,  
-для компиляции лучше выбрать папку, куда сохранять наши *.class* файлы:  
+Теперь допустим у нас несколько *.java* файлов
+
+<details>
+<summary>Пример</summary>
+
+```
+.
+├── Program.java
+├── pokemons/
+│   ├── HoOh.java
+│   └── Piloswine.java
+├── attacks/
+│   ├── physicalAttacks/
+|   │   └── Bulldoze.java
+│   └── statusAttacks/
+|       └── Amnesia.java
+└── lib/
+    ├── LibName.jar
+    ├── LibName2.jar
+    └── LibName3.jar
+```
+
+</details>
+
+Для компиляции лучше выбрать папку, куда сохранять наши *.class* файлы:  
 ```bash
-javac -d classes *.java  */*.java
+javac -d classes {*,*/{*,*/*}}.java
 ```
 или если для компиляции класса необходимы внешние библиотеки:  
 ```bash
-javac -classpath lib/LibName.jar:lib/LibName2.jar:lib/LibName3.jar -d classes *.java  */*.java
+javac -cp lib/LibName.jar:lib/LibName2.jar:lib/LibName3.jar -d classes {*,*/{*,*/*}}.java
 ```
-> В Linux разделитель -classpath `:`, а в Windows `;`!
+
+<details>
+<summary>Состояние директорий после выполнения</summary>
+
+```
+.
+├── Program.java
+├── pokemons/
+│   ├── HoOh.java
+│   └── Piloswine.java
+├── attacks/
+│   ├── physicalAttacks/
+|   │   └── Bulldoze.java
+│   └── statusAttacks/
+|       └── Amnesia.java
+├── lib/
+|   ├── LibName.jar
+|   ├── LibName2.jar
+|   └── LibName3.jar
+└── classes/
+    ├── Program.class
+    ├── pokemons/
+    │   ├── HoOh.class
+    │   └── Piloswine.class
+    └── attacks/
+        ├── physicalAttacks/
+        │   └── Bulldoze.class
+        └── statusAttacks/
+            └── Amnesia.class
+```
+
+</details>
+
+> В Linux разделитель -classpath `:`, а в Windows `;`!  
+> *-cp* или *-classpath* - то, где искать вспомогательные классы  
+> `{*,*/{*,*/*}}.java` - сокращенная запись `*.java */*.java */*/*.java`
 
 Теперь создадим *MANIFEST.mf* файл, сообщающий главный класс + библиотеки которые использует приложение: 
 ```bash 
-echo -e "Manifest-Version: 1.0\nMain-Class: HelloWorld\nClass-Path: lib/LibName.jar lib/LibName2.jar lib/LibName3.jar\n" > MANIFEST.mf
+echo -e "Manifest-Version: 1.0\nMain-Class: Program\nClass-Path: lib/LibName.jar lib/LibName2.jar lib/LibName3.jar\n" > MANIFEST.mf
 ```
+
+<details>
+<summary>Состояние директорий после выполнения</summary>
+
+```
+.
+├── Program.java
+├── pokemons/
+│   ├── HoOh.java
+│   └── Piloswine.java
+├── attacks/
+│   ├── physicalAttacks/
+|   │   └── Bulldoze.java
+│   └── statusAttacks/
+|       └── Amnesia.java
+├── lib/
+|   ├── LibName.jar
+|   ├── LibName2.jar
+|   └── LibName3.jar
+├── classes/
+|   ├── Program.class
+|   ├── pokemons/
+|   │   ├── HoOh.class
+|   │   └── Piloswine.class
+|   └── attacks/
+|       ├── physicalAttacks/
+|       │   └── Bulldoze.class
+|       └── statusAttacks/
+|           └── Amnesia.class
+└── MANIFEST.mf
+```
+Содержание MANIFEST.mf:
+```
+Manifest-Version: 1.0
+Main-Class: Program
+Class-Path: lib/LibName.jar lib/LibName2.jar lib/LibName3.jar
+
+```
+
+</details>
+
 > Тут важно не забыть про перенос строки в конце файла, иначе последняя строчка будет игнорироваться
 
 Теперь собирём *.jar* архив из этих *.class* файлов и *MANIFEST.mf* манифеста:  
 ```bash
-jar -cvfm app.jar MANIFEST.mf classes/{*/*,*}.class
+jar -cvfm app.jar MANIFEST.mf -C classes .
 ```
+
+<details>
+<summary>Состояние директорий после выполнения</summary>
+
+```
+.
+├── Program.java
+├── pokemons/
+│   ├── HoOh.java
+│   └── Piloswine.java
+├── attacks/
+│   ├── physicalAttacks/
+|   │   └── Bulldoze.java
+│   └── statusAttacks/
+|       └── Amnesia.java
+├── lib/
+|   ├── LibName.jar
+|   ├── LibName2.jar
+|   └── LibName3.jar
+├── classes/
+|   ├── Program.class
+|   ├── pokemons/
+|   │   ├── HoOh.class
+|   │   └── Piloswine.class
+|   └── attacks/
+|       ├── physicalAttacks/
+|       │   └── Bulldoze.class
+|       └── statusAttacks/
+|           └── Amnesia.class
+├── MANIFEST.mf
+└── app.jar
+```
+
+</details>
+
 > *-c* - recompile  
 > *-v* - info of compile  
 > *-f* - output file name  
-> *-m* - manifest name
+> *-m* - manifest name  
+> *-C* - change main dir
   
 Запускаем:  
 ```bash
